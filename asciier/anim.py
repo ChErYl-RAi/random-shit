@@ -1,403 +1,663 @@
-frames = ["""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     ________ 
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-                  /XXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-                  /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-                  /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
+frames = ["""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-O                 /XXXXXXXXXXX
-T________________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
- O                /XXXXXXXXXXX
-_T_______________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-  O               /XXXXXXXXXXX
-__T______________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-   O              /XXXXXXXXXXX
-___T_____________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-    O             /XXXXXXXXXXX
-____T____________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-     O            /XXXXXXXXXXX
-_____T___________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-      O           /XXXXXXXXXXX
-______T__________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-      O           /XXXXXXXXXXX
-______T__________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-      O           /XXXXXXXXXXX
-______T__________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-      O            /XXXXXXXXXX
-      X           /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-      O             /XXXXXXXXX
-      X            /XXXXXXXXXX
-                  /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-      O             /XXXXXXXXX
-      T            /XXXXXXXXXX
-                  /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-      O             /XXXXXXXXX
-      O            /XXXXXXXXXX
-      T           /XXXXXXXXXXX
-_________________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-      O            /XXXXXXXXXX
-      O           /XXXXXXXXXXX
-______T__________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-""","""                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-                     _________
-                    /XXXXXXXXX
-                   /XXXXXXXXXX
-      O           /XXXXXXXXXXX
-______T__________/XXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX_______________XXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX_______________XXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX_______________XXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX_______________XXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX_______________XXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX_______________XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   _       _   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   _       _   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   x       x   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX       _       XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX      ___      XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     _____     XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\____/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   O       O   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+""","""XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX   /\\     /\\   XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX     \\_/\\_/    XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
+XXXXXXX               XXXXXXXX
 """]
 import time
 

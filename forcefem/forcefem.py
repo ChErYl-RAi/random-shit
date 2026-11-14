@@ -128,6 +128,12 @@ BpyrR = pygame.image.load("img/Bpyrright.png")
 BpyrL = pygame.image.load("img/Bpyrleft.png")
 pyrT = pygame.image.load("img/pyrtalk.png")
 
+
+
+victim_1 = pygame.image.load("img/boymoder.png")
+victimB_1 = pygame.image.load("img/boymoderB.png")
+
+
 pygame.mixer.init()
 if platform.system()!="Windows":
   pygame.mixer.set_soundfont("img/midi.sf2")
@@ -158,21 +164,37 @@ basementtiles=[
   [5,5,5,5,5,5],
 ]
 
+strugglemsgs=[
+  "th.. thank you Miss...",                     #0
+  "...",                                        #1
+  "what're you gonna do to me...",              #2
+  "i'm so lost... help me find me...",          #3
+  "y... you sick perv..! leave me alone..!",    #4
+  "what the fuck am i doing here..........",    #5
+]
+
 px = 160
 pf=False
 basenums=3
 captives=2
-struggling = [2,1]
-strugglebuffer = [[0,0],[0,0]]
+struggling = [5,1]
+strugglebuffer = random.randint(0,999)
 strugglecounter=0
 moving = False
 ingame = False
+talkingto=0
 
 # Game loop.
 while True:
+  if jitterdown:
+    if strugglecounter==0:
+      strugglebuffer = random.randint(0,999)
+      strugglecounter=10
+    else:
+      strugglecounter-=1
+    random.seed(strugglebuffer)
   if ingame:
     screen.fill((0, 0, 0))
-    
     for event in pygame.event.get():
       if event.type == QUIT:
         pygame.quit()
@@ -205,11 +227,16 @@ while True:
         for x in range(6):
           screen.blit(tiles[basementtiles[y][x]],(32*x-cx+160+192+(192*r),32*y+16))
       if r<captives:
-        screen.blit(basemented,(-cx+160+192+(192*r)+96+random.randrange(-1*struggling[r],1*struggling[r]),64+random.randrange(-1*struggling[r],1*struggling[r])))
+        if struggling[r]>1:
+          screen.blit(basemented,(-cx+160+192+(192*r)+96+random.randrange(-1*int(struggling[r]/2),1*int(struggling[r]/2)),64+random.randrange(-1*int(struggling[r]/2),1*int(struggling[r]/2))))
+        else:
+          screen.blit(basemented,(-cx+160+192+(192*r)+96,64))
         if px>160+192+(192*r)-64 and px<160+192+(192*r)+24:
-          screen.blit(font.render("> interact",0,(255,255,255),(0,0,0)),(0,0))
-          if pygame.key.get_pressed()[K_UP] or pygame.key.get_pressed()[K_z]:
-            state=ST_TALK
+          if state==ST_WALK:
+            screen.blit(font.render("> interact",0,(255,255,255),(0,0,0)),(0,0))
+            if pygame.key.get_pressed()[K_UP] or pygame.key.get_pressed()[K_z]:
+              state=ST_TALK
+              talkingto=r
     if state==ST_WALK:
       if moving:
         if px%30<15:
@@ -227,9 +254,15 @@ while True:
           screen.blit(pyrL,(160+px-cx-40, 96))
         else:
           screen.blit(pyrR,(160+px-cx-40, 96))
+    elif state==ST_TALK:
+      screen.blit(pyrT,(160+px-cx-40, 96))
     
-    
-    
+    if state==ST_TALK:
+      if struggling[talkingto]>1:
+        screen.blit(victim_1,(20+random.randrange(-1*int(struggling[talkingto]/2),1*int(struggling[talkingto]/2)),0+random.randrange(-1*int(struggling[talkingto]/2),1*int(struggling[talkingto]/2))))
+      else:
+        screen.blit(victim_1,(20,0))
+
     pygame.display.flip()
     fpsClock.tick(fps)
   else:
@@ -244,8 +277,10 @@ while True:
         for x in range(6):
           screen.blit(tiles[basementtiles[y][x]],(32*x-px+160+192+(192*r),32*y+16))
       if r<captives:
-        screen.blit(basemented,(-px+160+192+(192*r)+96+random.randrange(-1*struggling[r],1*struggling[r]),64+random.randrange(-1*struggling[r],1*struggling[r])))
-    
+        if struggling[r]>1:
+          screen.blit(basemented,(-px+160+192+(192*r)+96+random.randrange(-1*int(struggling[r]/2),1*int(struggling[r]/2)),64+random.randrange(-1*int(struggling[r]/2),1*int(struggling[r]/2))))
+        else:
+          screen.blit(basemented,(-px+160+192+(192*r)+96,64))
     for event in pygame.event.get():
       if event.type == QUIT:
         pygame.quit()

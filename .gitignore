@@ -1,3 +1,4 @@
 forcefem/config.json
 *__pycache__*
 *.exe
+asciier/target/
